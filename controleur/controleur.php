@@ -1,32 +1,22 @@
 <?php
 
-function accueil()
+function index()
 {
 	
-    require('./view/frontend/accueil.php');
+    require('./index.php');
 }
 
 function france()
 {
-    require('./view/frontend/france.php');
+    require('./view/.php');
 }
 
 function connection()
 {
-    require('./view/frontend/connection.php');
+    require('./view/.php');
 }
 
 function contact()
 {
-    require('./view/frontend/contact.php ');
-}
-
-function international()
-{
-    require('./view/frontend/international.php');
-}
-
-function produit()
-{
-    require('./view/frontend/produits.php');
+    require('./view/.php ');
 }
