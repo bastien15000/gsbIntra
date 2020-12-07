@@ -5,10 +5,10 @@ function index()
     require('./index.php');
 }
 
-function consulter()
+function consulterFamilles()
 {
 	$lesfam = getFamilles(); 
-    require('./view/conslter.php');
+    require('./view/consulter.php');
 }
 
 function ()
