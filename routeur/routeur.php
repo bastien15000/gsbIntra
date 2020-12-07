@@ -2,8 +2,8 @@
 
 $page = $_GET['page'] ?? null;
 switch ($page) {
-    case '': 
-        ();
+    case 'familles': 
+        familles();
         break;
     case '':
         ();
