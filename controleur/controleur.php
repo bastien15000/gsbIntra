@@ -2,21 +2,21 @@
 
 function index()
 {
-	
     require('./index.php');
 }
 
-function france()
+function consulter()
+{
+	$lesfam = getFamilles(); 
+    require('./view/conslter.php');
+}
+
+function ()
 {
     require('./view/.php');
 }
 
-function connection()
-{
-    require('./view/.php');
-}
-
-function contact()
+function ()
 {
     require('./view/.php ');
 }

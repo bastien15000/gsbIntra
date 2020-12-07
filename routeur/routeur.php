@@ -2,20 +2,20 @@
 
 $page = $_GET['page'] ?? null;
 switch ($page) {
-    case 'france': 
-        france();
+    case '': 
+        ();
         break;
-    case 'contact':
-        contact();
+    case '':
+        ();
         break;
-    case 'international':
-        international();
+    case '':
+        ();
         break;
-    case 'produits' :
-        produit();
+    case '' :
+        ();
         break;
-    case 'connection':
-        connection();
+    case '':
+        ();
         break;
     default :
         index();
