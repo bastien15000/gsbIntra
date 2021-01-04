@@ -35,7 +35,7 @@ function getMedicamentFromFamille($idFamille)
 {
 	$db = dbConnect();
 
-	$medF = $db->query("SELECT id, nomCommercial, idFamille, composition, effets, contreIndications FROM medicament INNER JOIN famille ON idFamille = ?;");
+	$medF = $db->prepare("SELECT id, nomCommercial, idFamille, composition, effets, contreIndications FROM medicament INNER JOIN famille ON idFamille = ?;");
 
 	$medF->execute(array($idFamille));
 
