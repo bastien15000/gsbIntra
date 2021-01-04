@@ -7,9 +7,9 @@ switch ($page) {
     case 'familles': 
         familles();
         break;
-    // case '':
-    //     ();
-    //     break;
+    case 'medicaments':
+        medicaments();
+        break;
     // case '':
     //     ();
     //     break;

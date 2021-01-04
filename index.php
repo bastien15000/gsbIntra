@@ -11,8 +11,4 @@
     </div>
   </header>
 
-  <div class="bouttons">
-  	  	
-  </div>
-
 <?php include("view/partials/footer.php"); ?>
