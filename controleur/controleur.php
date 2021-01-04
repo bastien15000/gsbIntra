@@ -1,5 +1,7 @@
 <?php
 
+require('C:\wamp64\www\gsbIntra\model\model.php');
+
 function index()
 {
     require('./index.php');
@@ -9,21 +11,23 @@ function index()
 function familles()
 {
 	$lesfam = getFamilles(); 
-    require('./view/familles.php');
+    require('C:\wamp64\www\gsbIntra\view\familles.php');
 }
 
-function consulterFamilles()
+function medicaments()
 {
-	$lesfam = getFamilles(); 
-    require('./view/consulter.php');
+	$lesMedicaments = getMedicaments(); 
+    require('C:\wamp64\www\gsbIntra\view\medicaments.php');
 }
 
-function ()
-{
-    require('./view/.php');
-}
+medicaments();
 
-function ()
-{
-    require('./view/.php ');
-}
+// function ()
+// {
+//     require('./view/.php');
+// }
+
+// function ()
+// {
+//     require('./view/.php ');
+// }
