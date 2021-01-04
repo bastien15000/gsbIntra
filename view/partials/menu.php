@@ -22,14 +22,14 @@
                 Présentation
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/gsbIntra?page=familles">Familles</a>
-                <a class="dropdown-item" href="/gsbIntra?page=medicaments">Medicament</a>
+                <a class="dropdown-item" href="/routeur/routeur?page=familles">Familles</a>
+                <a class="dropdown-item" href="/routeur/routeur?page=medicaments">Medicament</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/gsb?page=produits">Produits</a>
+                <a class="nav-link" href="/routeur/routeur?page=familles">Familles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/gsb?page=contact">Contact</a>
+                <a class="nav-link" href="/routeur/routeur?page=contact">Contact</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
