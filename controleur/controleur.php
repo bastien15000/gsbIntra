@@ -12,10 +12,9 @@ function familles()
     require('./view/familles.php');
 }
 
-function consulterFamilles()
-{
-	$lesfam = getFamilles(); 
-    require('./view/consulter.php');
+function ()
+{ 
+    require('./view/.php');
 }
 
 function ()
