@@ -31,15 +31,78 @@ function getMedicaments()
     return $med;
 }
 
-function getMedicamentFromFamille($idFamille)
+function getMedicamentsFromFamille($idFamille)
 {
 	$db = dbConnect();
 
-	$medF = $db->prepare("SELECT id, nomCommercial, idFamille, composition, effets, contreIndications FROM medicament INNER JOIN famille ON idFamille = ?;");
+	$medF = $db->prepare("SELECT medicament.id, nomCommercial, idFamille, composition, effets, contreIndications FROM medicament INNER JOIN famille ON idFamille = famille.id
+	WHERE idFamille = ?;");
 
 	$medF->execute(array($idFamille));
 
 	return $medF;
 }
+
+function postFamille($id, $libelle)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('INSERT INTO famille(id, libelle) VALUES (?,?)');
+    $affectedLines = $requete->execute(array($id, $libelle));
+
+    return $affectedLines;
+}
+
+function postMedicament($id, $nomCommercial, $idFamille, $composition, $effets, $contreIndications)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('INSERT INTO medicament(id, nomCommercial, idFamille, composition, effets, contreIndications) VALUES (?,?,?,?,?,?)');
+    $affectedLines = $requete->execute(array($id, $nomCommercial, $idFamille, $composition, $effets, $contreIndications));
+
+    return $affectedLines;
+}
+
+function modifyFamille($newId, $libelle, $oldId)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('UPDATE famille SET id = ?, libelle = ? WHERE id = ?');  
+    $affectedLines = $requete->execute(array($newId, $libelle, $oldId));
+
+    return $affectedLines;
+}
+
+function modifyMedicament($newId, $nomCommercial, $idFamille, $composition, $effets, $contreIndications, $oldId)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('UPDATE medicament SET id = ?, nomCommercial = ?, idFamille = ?, composition = ?, effets = ?, contreIndications = ? WHERE id = ?');  
+    $affectedLines = $requete->execute(array($newId, $nomCommercial, $idFamille, $composition, $effets, $contreIndications, $oldId));
+
+    return $affectedLines;
+}
+
+function removeFamille($id)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('DELETE FROM famille WHERE id = ?');
+    $affectedLines = $requete->execute(array($id));
+
+    return $affectedLines;
+}
+
+function removeMedicament($id)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('DELETE FROM medicament WHERE id = ?');
+    $affectedLines = $requete->execute(array($id));
+
+    return $affectedLines;
+}
+
+
 
 

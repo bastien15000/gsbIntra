@@ -22,14 +22,14 @@
                 Présentation
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/routeur/routeur?page=familles">Familles</a>
-                <a class="dropdown-item" href="/routeur/routeur?page=medicaments">Medicament</a>
+                <!--<a class="dropdown-item" href="routeur/routeur.php?page=familles">Familles</a>
+                <a class="dropdown-item" href="routeur/routeur.php?page=medicaments">Medicament</a>-->
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/routeur/routeur?page=familles">Familles</a>
+                <a class="nav-link" href="routeur/routeurFamilles.php">Familles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/routeur/routeur?page=medicaments">Medicaments</a>
+                <a class="nav-link" href="routeur/routeurMedicaments.php">Medicaments</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
