@@ -1,6 +1,6 @@
 <?php
 
-//include('../view/partials/menu.php');
+include(__DIR__.'/../../gsbIntra/view/partials/menu.php');
 
 require(__DIR__.'/../../gsbIntra/controleur/controleur.php');
 
@@ -34,4 +34,4 @@ else {
     familles();
 }
 
-//include('../view/partials/footer.php');
+include(__DIR__.'/../../gsbIntra/view/partials/footer.php');

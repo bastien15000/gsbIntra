@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="././././public/css/menu.css">
+  <link rel="stylesheet" href="/gsbIntra/public/css/menu.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="script.js"></script>
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light menuBack menuShadow">
-    <a class="navbar-brand" href="/gsb"><img src="././././public/images/logo.png" style="height:70px;"/></a>
+    <a class="navbar-brand" href="/gsbIntra"><img src="/gsbIntra/public/images/logo.png" style="height:70px;"/></a>
 
     <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -26,10 +26,10 @@
                 <a class="dropdown-item" href="routeur/routeur.php?page=medicaments">Medicament</a>-->
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="routeur/routeurFamilles.php">Familles</a>
+                <a class="nav-link" href="/gsbIntra/routeur/routeurFamilles.php">Familles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="routeur/routeurMedicaments.php">Medicaments</a>
+                <a class="nav-link" href="/gsbIntra/routeur/routeurMedicaments.php">Medicaments</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

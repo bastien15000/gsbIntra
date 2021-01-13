@@ -8,6 +8,8 @@
     <div class="bloc_header">
       <h1 class="titre">GSB</h1>
       <h3 class="titre">Galaxy Swiss Bourdin</h3>
+      <p>Votre connexion est réussie et vous permet d'avoir accès à toute notre base de données de médicament.</p>
+      <p>Nous vous demandons de la manipuler rigoureusement afin de ne pas altérer l'organisation et la productivité de notre société.</p>
     </div>
   </header>
 

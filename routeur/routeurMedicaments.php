@@ -1,5 +1,7 @@
 <?php
 
+include(__DIR__.'/../../gsbIntra/view/partials/menu.php');
+
 require(__DIR__.'/../../gsbIntra/controleur/controleur.php');
 
 if(isset($_GET['action'])){
@@ -34,3 +36,5 @@ elseif(isset($_GET['idFamille'])){
 else {
     medicaments();
 }
+
+include(__DIR__.'/../../gsbIntra/view/partials/footer.php');

@@ -1,51 +1,116 @@
 <!DOCTYPE html>
     <head>
         <title>Consulter</title>
-        <link rel="stylesheet" href="consulter.css">
+        <link rel="stylesheet" href="/gsbIntra/public/css/consulter.css">
         <meta charset="UTF-8">
     </head>
     <body>
         <div class="formulaire">
-            <h1>Ajouter un médicament : </h1>
-            <form action="?action=addMedicament" method="post">
-                <label for="id">Id : </label>
-                <input id="id" name="id" type="text">
-                <label for="nomCommercial">Nom commercial : </label>
-                <input id="nomCommercial" name="nomCommercial" type="text">
-                <label for="idFamille">Id famille : </label>
-                <input id="idFamille" name="idFamille" type="text">
-                <label for="composition">Composition : </label>
-                <input id="composition" name="composition" type="text">
-                <label for="effets">Effets : </label>
-                <input id="effets" name="effets" type="text">
-                <label for="contreIndications">Contre-indications : </label>
-                <input id="contreIndications" name="contreIndications" type="text">
-                <input type="submit" value="Ajouter">
-            </form>
-            <h1>Modifier un médicament : </h1>
-            <form action="?action=updateMedicament" method="post">
-                <label for="oldId">Id du médicament à modifier : </label>
-                <input class="text" id="oldId" name="oldId" type="text">
-                <label for="newId">Modifier id : </label>
-                <input class="text" id="newId" name="newId" type="text"><br>
-                <label for="nomCommercial">Modifier nom commercial : </label>
-                <input class="text" id="nomCommercial" name="nomCommercial" type="text">
-                <label for="idFamille">Modifier id Famille : </label>
-                <input class="text" id="idFamille" name="idFamille" type="text">
-                <label for="composition">Modifier composition : </label>
-                <input id="composition" name="composition" type="text">
-                <label for="effets">Modifier effets : </label>
-                <input id="effets" name="effets" type="text">
-                <label for="contreIndications">Modifier contre-indications : </label>
-                <input id="contreIndications" name="contreIndications" type="text">
-                <input class="btn" type="submit" value="Modifier">
-            </form>
-            <h1>Supprimer un médicament : </h1>
-            <form action="?action=deleteMedicament" method="post">
-                <label for="id">Id : </label>
-                <input class="text" id="id" name="id" type="text">
-                <input class="btn" type="submit" value="Supprimer">
-            </form>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7"><h1>Ajouter un médicament : </h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <form action="?action=addMedicament" method="post">
+                    <tr>
+                        <td>
+                            <label for="id">Id : </label>
+                            <input id="id" name="id" type="text">
+                        </td>
+                        <td>
+                            <label for="nomCommercial">Nom commercial : </label>
+                            <input id="nomCommercial" name="nomCommercial" type="text">
+                        </td>
+                        <td>
+                            <label for="idFamille">Id famille : </label>
+                            <input id="idFamille" name="idFamille" type="text">
+                        </td>
+                        <td>
+                            <label for="composition">Composition : </label>
+                            <input id="composition" name="composition" type="text">
+                        </td>
+                        <td>
+                            <label for="effets">Effets : </label>
+                            <input id="effets" name="effets" type="text">
+                        </td>
+                        <td>
+                            <label for="contreIndications">Contre-indications : </label>
+                            <input class="lastLine" id="contreIndications" name="contreIndications" type="text">
+                        </td>
+                        <td>
+                            <input class="btn" type="submit" value="Ajouter">
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="8"><h1>Modifier un médicament : </h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <form action="?action=updateMedicament" method="post">
+                    <tr>
+                        <td>
+                            <label for="oldId">Id médicament à modifier : </label>
+                            <input class="text" id="oldId" name="oldId" type="text">
+                        </td>
+                        <td>
+                            <label for="newId">Modifier id : </label>
+                            <input class="text" id="newId" name="newId" type="text">
+                        </td>
+                        <td>
+                            <label for="nomCommercial">Modifier nom commercial : </label>
+                            <input class="text" id="nomCommercial" name="nomCommercial" type="text">
+                        </td>
+                        <td>
+                            <label for="idFamille">Modifier id Famille : </label>
+                            <input class="text" id="idFamille" name="idFamille" type="text">
+                        </td>
+                        <td>
+                            <label for="composition">Modifier composition : </label>
+                            <input id="composition" name="composition" type="text">
+                        </td>
+                        <td>
+                            <label for="effets">Modifier effets : </label>
+                            <input id="effets" name="effets" type="text">
+                        </td>
+                        <td>
+                            <label for="contreIndications">Modif contre-indications : </label>
+                            <input class="lastLine" id="contreIndications" name="contreIndications" type="text">
+                        </td>
+                        <td>
+                            <input class="btn" type="submit" value="Modifier">
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3"> <h1>Supprimer un médicament : </h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <form action="?action=deleteMedicament" method="post">
+                    <tr>
+                        <td>
+                            <label for="id">Id : </label>
+                            <input class="lastLine" class="text" id="id" name="id" type="text">
+                        </td>
+                        <td></td>
+                        <td>
+                            <input class="btn" type="submit" value="Supprimer">
+                        </td>
+                    </tr>
+                </form>
+            <tbody>
+        </table>
         </div>
         <h1>Liste des médicaments</h1>
         <?php
