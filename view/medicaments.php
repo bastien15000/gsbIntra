@@ -20,12 +20,12 @@
                 {
                     $donnees['idFamille'] = $_GET['idFamille'];
                 }
-                echo '<h3>' . $donnees['id'] . ' : </h3>
-                <p>Nom commercial : ' . $donnees['nomCommercial'] . '</p>
-                <p> Id Famille : ' . $donnees['idFamille'] . '</p>
-                <p>Composition : ' . $donnees['composition'] . '</p>
-                <p>Effets : ' . $donnees['effets'] . '</p>
-                <p>Contre-Indications : ' . $donnees['contreIndications'] . ' </p>';
+                echo '<h3 class = titre-medicaments>    ' . $donnees['id'] . ' : </h3>
+                <p class = lib-med>Nom commercial : ' . $donnees['nomCommercial'] . '</p>
+                <p class = lib-med> Id Famille : ' . $donnees['idFamille'] . '</p>
+                <p class = lib-med>Composition : ' . $donnees['composition'] . '</p>
+                <p class = lib-med>Effets : ' . $donnees['effets'] . '</p>
+                <p class = lib-med>Contre-Indications : ' . $donnees['contreIndications'] . ' </p>';
             }
         ?>
         </div>

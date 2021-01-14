@@ -6,11 +6,11 @@
     </head>
     <body>
         <h1 class="vue-medicaments">Liste des familles de médicaments</h1>
-        <div class="vue-medicaments">
+        <div>
         <?php
             while($donnees = $lesfam->fetch())
             {
-                echo '<a href=routeurMedicaments.php?idFamille=' .$donnees['id']. '><h3>' . $donnees['id'] . ' : </h3></a><p>' . $donnees['libelle'] . '</p>';
+                echo '<a href=routeurMedicaments.php?idFamille=' .$donnees['id']. '><h3 class = titre-familles>' . $donnees['id'] . ' : </h3></a><p class = lib-fam>' . $donnees['libelle'] . '</p>';
             }
         ?>
         </div>

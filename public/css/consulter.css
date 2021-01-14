@@ -24,9 +24,29 @@
   margin-top: 3%;
 }
 
-.vue-medicaments {
-  margin-top: 2%;
-  margin-left: 2%;
+h1.vue-medicaments {
+  background-color: #00ccff;
+  text-align: center;
 }
+
+h3.titre-medicaments{
+  padding-left: 2%;
+  background-color: #E0E6E7;
+}
+
+
+h3.titre-familles{
+  background-color: #E0E6E7;
+  text-align: center;
+}
+
+p.lib-fam{
+  text-align: center;
+}
+
+p.lib-med{
+  margin-left: 5%;
+}
+
 
 /*# sourceMappingURL=consulter.css.map */
