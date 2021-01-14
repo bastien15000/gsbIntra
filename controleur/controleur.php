@@ -96,3 +96,9 @@ function deleteMedicament($id)
         header('Location: /gsbIntra/routeur/routeurMedicaments.php');
     }
 }
+
+function searchMedicament($id)
+{
+    $lesMedicaments = findMedicament($id);
+    require(__DIR__.'/../../gsbIntra/view/medicaments.php');
+}

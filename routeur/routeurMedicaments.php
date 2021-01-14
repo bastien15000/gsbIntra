@@ -29,6 +29,9 @@ if(isset($_GET['action'])){
              echo "Veuillez remplir les champs de modification médicament !";
         }
     }
+    elseif($_GET['action'] == 'searchMedicament'){
+        searchMedicament($_POST['medicSearch']);
+    }
 }
 elseif(isset($_GET['idFamille'])){
     medicamentsFromF($_GET['idFamille']);

@@ -103,6 +103,16 @@ function removeMedicament($id)
     return $affectedLines;
 }
 
+function findMedicament($id)
+{
+	$db = dbConnect();
+
+	$requete = $db->prepare('SELECT * FROM medicament WHERE id LIKE ?%;');
+    $affectedLines = $requete->execute(array($id));
+
+    return $affectedLines;
+}
+
 
 
 

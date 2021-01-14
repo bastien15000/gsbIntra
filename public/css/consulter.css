@@ -20,5 +20,13 @@
 .formulaire td {
   display: inline-block;
 }
+.formulaire table {
+  margin-top: 3%;
+}
+
+.vue-medicaments {
+  margin-top: 2%;
+  margin-left: 2%;
+}
 
 /*# sourceMappingURL=consulter.css.map */

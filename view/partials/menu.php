@@ -6,22 +6,20 @@
   <link rel="stylesheet" href="/gsbIntra/public/css/menu.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="script.js"></script>
-
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light menuBack menuShadow">
     <a class="navbar-brand" href="/gsbIntra"><img src="/gsbIntra/public/images/logo.png" style="height:70px;"/></a>
-
     <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/gsbIntra">Accueil <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+                <a class="nav-link" href="/gsbIntra/view/presentation.php" aria-expanded="false">
                 Présentation
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
                 <!--<a class="dropdown-item" href="routeur/routeur.php?page=familles">Familles</a>
                 <a class="dropdown-item" href="routeur/routeur.php?page=medicaments">Medicament</a>-->
             </li>
@@ -32,9 +30,9 @@
                 <a class="nav-link" href="/gsbIntra/routeur/routeurMedicaments.php">Medicaments</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="mr-sm-2 inputSearch" type="search" placeholder="Produit" aria-label="Search">
-            <button class="search" type="submit">Rechercher</button>
+        <form class="form-inline my-2 my-lg-0" method="post" action="/gsbIntra/routeur/routeurMedicaments.php?action=searchMedicament">
+            <input class="mr-sm-2 inputSearch" name="medicSearch" type="search" placeholder="Produit" aria-label="Search">
+            <input class="btn" type="submit" value="Rechercher">
         </form>
         <a class="icon" href="/gsb?page=connection">
             <svg class="icon" viewBox="-42 0 512 512.001" xmlns="http://www.w3.org/2000/svg">

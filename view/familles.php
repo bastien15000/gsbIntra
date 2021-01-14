@@ -5,6 +5,15 @@
         <meta charset="UTF-8">
     </head>
     <body>
+        <h1 class="vue-medicaments">Liste des familles de médicaments</h1>
+        <div class="vue-medicaments">
+        <?php
+            while($donnees = $lesfam->fetch())
+            {
+                echo '<a href=routeurMedicaments.php?idFamille=' .$donnees['id']. '><h3>' . $donnees['id'] . ' : </h3></a><p>' . $donnees['libelle'] . '</p>';
+            }
+        ?>
+        </div>
         <div class="formulaire">
             <table>
                 <thead>
@@ -80,12 +89,5 @@
                 </tbody>
             </table>
         </div>
-        <h1>Liste des familles de médicaments</h1>
-        <?php
-            while($donnees = $lesfam->fetch())
-            {
-                echo '<a href=routeurMedicaments.php?idFamille=' .$donnees['id']. '><h3>' . $donnees['id'] . ' : </h3></a><p>' . $donnees['libelle'] . '</p>';
-            }
-        ?>
     </body>
 </html>
